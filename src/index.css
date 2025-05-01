@@ -1,0 +1,11 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.tailwind-container {
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+}

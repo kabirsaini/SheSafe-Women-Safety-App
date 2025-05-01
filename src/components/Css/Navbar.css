@@ -1,0 +1,43 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #c75ac3;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin-left: 10px;
+
+}
+
+.buttondiv{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.button1{
+    background-color: #6cd06f;
+    color: black;
+    width: 70px;
+    height: 30px;
+    right: 10px;
+    border-radius: 10px;
+}
+
+
+#link{
+    text-decoration: none;
+    color: white;
+}
+
+/* .red{
+    background-color: black;
+} */
+
+
