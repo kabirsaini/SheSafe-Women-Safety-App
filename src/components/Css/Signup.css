@@ -1,14 +1,12 @@
-*{
+/* *{
     margin: 0px;
     padding: 0px;
 }
 
-.signup-cont{
+.signup-container{
     display: flex;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     flex-direction: column;
 }
 
@@ -30,4 +28,4 @@
     border: 1px solid red;
     color: red;
     width: fit-content;
-}
+} */

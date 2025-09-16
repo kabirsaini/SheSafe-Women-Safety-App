@@ -1,0 +1,97 @@
+.mini-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .mini-popup-content {
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+    border: 1px solid #d5d9d9;
+    box-shadow: 0 0 14px rgba(15, 17, 17, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: black;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .mini-popup-content h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+  }
+  
+  .mini-popup-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+  }
+  
+  .mini-popup-content input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .mini-popup-content button[type="submit"] {
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .mini-popup-content button[type="submit"]:hover {
+    background-color: #005fcc;
+  }
+  
+  .error-msg {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+    margin: 0 10px;
+}
+.google-login {
+    display: flex;
+    justify-content: center;
+    
+}

@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import About from './components/About.jsx';
-import Footer from './components/Footer';
+import Login from './components/Auth/Login.jsx';
+import Signup from './components/Auth/Signup.jsx';
+import Frontpage from './components/Frontpage.jsx';
 import { default as GetCurrentAddress } from './components/GetCurrentAddress.jsx';
+import Mainpage from './components/Mainpage.jsx';
 import Navbar from './components/Navbar';
-import Signup from './components/Signup.jsx';
-import Mainpage from './components/mainpage';
+import Register from './components/Register.jsx';
 import './index.css';
+import Footer from './components/Footer.jsx';
+import UpdateRegister from './components/UpdateRegister.jsx';
 
 
 function App() {
@@ -15,7 +19,11 @@ function App() {
   const router= createBrowserRouter([
     {
       path: '/',
-      element: <> <Navbar /><Mainpage/> </>
+      element: <><Frontpage/> </>
+    },
+    {
+      path: '/Register',
+      element: <><Register/> </>
     },
     {
       path: '/GetCurrentAddress',
@@ -27,7 +35,19 @@ function App() {
     },
     {
       path: '/Signup',
-      element: <> <Navbar/> <Signup/></>
+      element: <> <Signup/></>
+    },
+    {
+      path: '/Login',
+      element:<> <Login /></>
+    },
+    {
+      path: '/UpdateRegister',
+      element: <> <Navbar/> <UpdateRegister/></>
+    },
+    {
+      path: '/Mainpage',
+      element:<><Navbar/> <Mainpage /><Footer/></>
     }
   ])
   const [btnCount, setCount] = useState(0);
@@ -42,7 +62,7 @@ function App() {
     <>
     <RouterProvider router={router} />
 
-      <Footer />
+
     </>
   );
 }

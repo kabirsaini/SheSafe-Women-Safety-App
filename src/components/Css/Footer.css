@@ -1,8 +1,5 @@
 .footer{
-    background-color: rgb(56, 48, 48);
-    color: aliceblue;
-    
+    position: fixed;
     bottom: 0px;
     width: 100%;
-    text-align: center;
 }

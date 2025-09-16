@@ -1,0 +1,120 @@
+/* Container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  /* Form */
+  .register-form {
+    display: flex;
+  flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  /* Heading */
+  .register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Relative section */
+  .relative-block {
+    background: #fafafa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+  }
+  
+  .relative-block h4 {
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  /* Labels */
+  .register-form label {
+    display: block;
+    margin: 8px 0 5px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Input fields */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.2s;
+  }
+  
+  .input-field:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76,175,80,0.3);
+  }
+  
+  /* Buttons */
+  .add-btn,
+  .remove-btn,
+  .submit-btn {
+    margin-top: 12px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .add-btn {
+    background: #2196F3;
+    color: #fff;
+    
+    display: inline-block;   /* no full width */
+  width: auto;
+  margin-left: auto;
+  text-align: right;
+  }
+  
+  .add-btn:hover {
+    background: #1976D2;
+  }
+  
+  .remove-btn {
+    background: #f44336;
+    color: #fff;
+    margin-top: 10px;
+  }
+  
+  .remove-btn:hover {
+    background: #d32f2f;
+  }
+  
+  .submit-btn {
+    background: #4CAF50;
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .submit-btn:hover {
+    background: #388E3C;
+  }
+  
+  /* Error message */
+  .error-msg {
+    color: #f44336;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
