@@ -1,0 +1,78 @@
+.mini-popup-overlay1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .mini-popup-content1 {
+    background-color: white;
+    padding: 20px;
+    width: auto;
+    border-radius: 8px;
+    border: 1px solid #d5d9d9;
+    box-shadow: 0 0 14px rgba(15, 17, 17, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: black;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .mini-popup-content h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: black;
+  }
+
+  .cyber-tips {
+    padding: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .cyber-tips h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .cyber-tips ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .cyber-tips li {
+    margin-bottom: 1rem;
+    border-left: 4px solid #6c63ff;
+    padding-left: 10px;
+  }
+  
+  .cyber-tips h6 {
+    margin: 0;
+    color: #6c63ff;
+    font-weight: 600;
+  }
+  
+  .cyber-tips p {
+    margin: 5px 0 0;
+    font-size: 0.95rem;
+  }
+  

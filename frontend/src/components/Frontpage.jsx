@@ -52,10 +52,10 @@ const Frontpage = () => {
                 </div>
             </div>
 
+
             <div className="header">
                 <h2>About SheSafe</h2>
             </div>
-
             <div className="about">
 
 

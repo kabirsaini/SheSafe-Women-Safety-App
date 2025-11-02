@@ -4,11 +4,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #cc63c9;
+  background-color: white;
   padding: 10px 20px;
-  color: #fff;
+  color: black;
   overflow: visible;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
@@ -24,7 +25,7 @@
 
 .navbar-links li a {
   text-decoration: none;
-  color: #ffffff;
+  color: black;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -46,10 +47,10 @@
 .dropdown-button {
   display: flex;
 align-items: center;
-background-color: #cc63c9;
+background-color: white;
 font-size: 15px;
 margin-top: 1.5px;
-color: white;
+color: black;
 border: none;
 border-radius: 4px;
 font-weight: 550;

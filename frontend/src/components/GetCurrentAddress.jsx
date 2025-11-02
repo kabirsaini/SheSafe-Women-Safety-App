@@ -13,7 +13,7 @@ const GetCurrentAddressWithMap = () => {
     const [selectedStation, setSelectedStation] = useState(null);
     const [mapLoaded, setMapLoaded] = useState(false);
     const [placesService, setPlacesService] = useState(null);
-    const libraries = ["places"]; 
+    const libraries = ["places"];
     console.log(location);
 
     const mapRef = useRef(null);
@@ -128,7 +128,7 @@ const GetCurrentAddressWithMap = () => {
                             />
                         ))}
 
-                        {/* InfoWindow for selected police station */}
+                        {/* Window for selected police station */}
                         {selectedStation && (
                             <InfoWindow
                                 position={{

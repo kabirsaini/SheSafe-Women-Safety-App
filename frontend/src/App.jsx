@@ -3,14 +3,15 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import About from './components/About.jsx';
 import Login from './components/Auth/Login.jsx';
 import Signup from './components/Auth/Signup.jsx';
+import Footer from './components/Footer.jsx';
 import Frontpage from './components/Frontpage.jsx';
 import { default as GetCurrentAddress } from './components/GetCurrentAddress.jsx';
 import Mainpage from './components/Mainpage.jsx';
 import Navbar from './components/Navbar';
 import Register from './components/Register.jsx';
-import './index.css';
-import Footer from './components/Footer.jsx';
 import UpdateRegister from './components/UpdateRegister.jsx';
+import WomenSafetyVideos from './components/WomenSafetyVideos.jsx';
+import './index.css';
 
 
 function App() {
@@ -40,6 +41,10 @@ function App() {
     {
       path: '/Login',
       element:<> <Login /></>
+    },
+    {
+      path: '/WomenSafetyVideos',
+      element:<> <WomenSafetyVideos /></>
     },
     {
       path: '/UpdateRegister',

@@ -1,3 +1,5 @@
+
+
 .mainimage {
     margin-top: 10px;
 }
@@ -163,8 +165,7 @@
     gap:15px;
 }
 .protectbox {
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -207,5 +208,67 @@
         gap: 10px
 }
 
+.helpbox{
+    display:flex;
+    flex-direction: column;
+    margin:50px;
+}
 
-  
+.helpcontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.helpbox1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    opacity: 0.7;
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-size: larger;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#helpbox1{
+    background-image: url('/images/cyberBul.png');
+}
+
+#helpbox2{
+    background-image: url('/images/harrass.jpg');
+}
+
+#helpbox3{
+    background-image: url('/images/DomVio.png');
+}
+
+.SafetyTips{
+    margin-left:40px;
+}
+
+.Safetycontainer{
+    display: flex;
+    flex-direction: row;
+    margin-top:30px;
+}
+
+.helpinfo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
