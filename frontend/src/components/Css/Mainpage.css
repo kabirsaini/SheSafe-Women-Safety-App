@@ -272,3 +272,33 @@
     justify-content: center;
     z-index: 999;
 }
+.Blogs{
+    margin-top:50px;
+    margin-left:40px;
+}
+.blogcontainer{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+}
+.blogbox{
+    height: 200px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.save-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .save-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .save-icon {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+  }
+  

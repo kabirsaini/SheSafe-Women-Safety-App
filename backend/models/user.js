@@ -30,6 +30,10 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    stories:{
+        type: [String],
+        default: []
+    },
     relatives: [relativeSchema]
 });
 

@@ -25,9 +25,11 @@
 }
 
 .top-container p {
+  font-style: italic;
     font-size: 1.2rem;
     color: black;
     margin-bottom: 20px;
+    margin-left: 19px;
 }
 
 .top-container button {
@@ -83,4 +85,4 @@
     opacity: 1;
     transform: translateX(0); /* move to normal position */
   }
-  
+ 

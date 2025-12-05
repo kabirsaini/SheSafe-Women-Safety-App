@@ -16,6 +16,10 @@ router.put('/UpdateRegister', isAuthenticated, UserController.updateRegister);
 
 router.get('/me', isAuthenticated, UserController.me);
 
+router.post('/addStory', isAuthenticated, UserController.addStory);
+
+router.get('/getStories', isAuthenticated, UserController.getStories);
+
 
 module.exports = router;
 

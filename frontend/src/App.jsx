@@ -12,6 +12,7 @@ import Register from './components/Register.jsx';
 import UpdateRegister from './components/UpdateRegister.jsx';
 import WomenSafetyVideos from './components/WomenSafetyVideos.jsx';
 import './index.css';
+import Chatbot1 from './components/Chatbot/Chatbot1.jsx';
 
 
 function App() {
@@ -52,16 +53,20 @@ function App() {
     },
     {
       path: '/Mainpage',
-      element:<><Navbar/> <Mainpage /><Footer/></>
+      element:<><Navbar/> <Mainpage /><Chatbot1 /></>
+    },
+    {
+      path: '/Chatbot',
+      element:<><Navbar/> <Mainpage /><Chatbot1 /></>
     }
   ])
-  const [btnCount, setCount] = useState(0);
+  // const [btnCount, setCount] = useState(0);
   
 
 
-  const handleClick = () => {
-    setCount(btnCount + 1);
-  };
+  // const handleClick = () => {
+  //   setCount(btnCount + 1);
+  // };
 
   return (
     <>

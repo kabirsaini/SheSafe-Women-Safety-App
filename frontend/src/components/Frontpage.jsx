@@ -41,7 +41,7 @@ const Frontpage = () => {
                 <div className="topimage-cont">
                     <div className="top-container">
                         <h1>SheSafe</h1>
-                        <p>Empowering women to live without fear</p>
+                        <p id ="frontline">Empowering women to live without fear</p>
 
                         <button onClick={() => setShowSignup(true)}>Get Started</button>
                         {showSignup && <Signup onClose={() => setShowSignup(false)} />}
@@ -62,13 +62,12 @@ const Frontpage = () => {
                 <div className="about-us1 fade-left" ref={leftRef}>
                 <h3> Who we are? </h3>
                     <p>
-                        Our mission is to provide a safe and supportive environment for women
-                        to share their experiences and connect with others who have gone
-                        through similar situations.
+                    SheSafe is a safety-driven platform built to empower women.
                     </p>
                     <p>
-                        We believe that by sharing our stories, we can help each other heal
-                        and grow stronger.
+                    It is more than just an app — it’s a movement.
+                    We stand for safety, solidarity, and strength.
+Our goal is simple: to empower women with tools that protect, connect, and inspire.
                     </p>
                 </div>
 
