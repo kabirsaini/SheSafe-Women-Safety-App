@@ -57,8 +57,8 @@ const Chatbot1 = () => {
     return (
         <div className={`container ${showChatbot ? "show-chatbot" : ""}`}>
             <button onClick={() => setShowChatbot(prev => !prev)} id="chatbot-toggler">
-                <span className="material-symbols-rounded">
-                    {showChatbot ? "close" : "mode_comment"}
+                <span >
+                    <img src="/images/8943377.png" alt="" height={35} width={35}/>
                 </span>
             </button>
 

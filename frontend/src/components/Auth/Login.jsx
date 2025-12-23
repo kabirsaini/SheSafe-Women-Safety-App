@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { GoogleLogin } from '@react-oauth/google';
 import { Link, useNavigate } from 'react-router-dom';
 import '@components/Css/MiniPopup.css';
+import { toast } from 'react-toastify';
 
 const Login = ({ onClose }) => {
     const {
@@ -31,14 +32,14 @@ const Login = ({ onClose }) => {
                 const { user, token } = result;
                 localStorage.setItem("token", token);
                 localStorage.setItem("user", JSON.stringify(user));
-                alert("Login successful ✅");
+                toast.success("Login successful ✅");
                 navigate("/Mainpage"); // redirect if needed
             } else {
                 alert("Login failed ❌\n" + result.message);
             }
         } catch (err) {
             console.error(err);
-            alert("Login error occurred.");
+            toast.error("An error occurred during login ❌");
         }
     };
 

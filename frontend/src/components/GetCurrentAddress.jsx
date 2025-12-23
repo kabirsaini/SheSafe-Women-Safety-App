@@ -86,17 +86,21 @@ const GetCurrentAddressWithMap = () => {
         setMapLoaded(true);
     };
 
+    const containerStyle = {
+        width: "100%",
+        height: "500px",
+        borderRadius: "20px",
+        overflow: "hidden",
+        border: "2px solid #e0e0e0",
+        boxShadow: "0 4px 10px rgba(0,0,0,0.2)"
+    };
+
     return (
-        <div>
-            <h3>Police Stations near by You </h3>
+        <div style={{ padding: '20px' ,marginTop:'20px'}}>
+            <h3 style={{marginBottom:'20px'}}>Police Stations near by You </h3>
 
             {error && <p style={{ color: 'red' }}>{error}</p>}
             
-            <LoadScript 
-                googleMapsApiKey="AIzaSyDKu-HIFLE5XrCNmndmrIsOyD9TQI5ac2A" 
-                libraries={libraries}
-                onError={(err) => console.error("Google Maps API load error:", err)}
-            >
                 {location ? (
                     <GoogleMap
                         mapContainerStyle={containerStyle}
@@ -150,7 +154,6 @@ const GetCurrentAddressWithMap = () => {
                 ) : (
                     <p>Loading map...</p>
                 )}
-            </LoadScript>
         </div>
     );
 };

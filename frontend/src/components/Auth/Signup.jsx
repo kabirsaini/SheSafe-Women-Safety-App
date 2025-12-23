@@ -1,8 +1,10 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { useForm } from "react-hook-form";
 import {Link, useNavigate } from 'react-router-dom';
 import { GoogleLogin } from '@react-oauth/google';
 import '@components/Css/MiniPopup.css';
+import { toast } from 'react-toastify';
+import Login from './Login.jsx';
 
 
 const Signup = ({onClose}) => {
@@ -13,6 +15,8 @@ const Signup = ({onClose}) => {
     } = useForm();
 
     const navigate = useNavigate();
+
+    const [showLogin, setShowLogin] = useState(false);
 
     const onSubmit = async (data) => {
         try {
@@ -125,7 +129,11 @@ const Signup = ({onClose}) => {
                 </div>
 
                 <div className='signup-footer'>
-                    <p>Already have an account? <Link to="/Login">Login</Link></p>
+                    <p>Already have an account? <span onClick={() => {
+                        setShowLogin(true); 
+                        onClose(); 
+                    }}>Log in</span></p>
+                    {showLogin && <Login onClose={() => setShowLogin(false)} />}
                 </div>
             </div>
         </div>

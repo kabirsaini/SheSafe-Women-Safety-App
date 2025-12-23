@@ -34,6 +34,14 @@ const UserSchema = new mongoose.Schema({
         type: [String],
         default: []
     },
+
+    address: {
+        street: { type: String, required: false },     // e.g., "123 Main Street"
+        city: { type: String, required: false },     // e.g., "Ludhiana"
+        state: { type: String, required: false },     // e.g., "Punjab"
+        pincode: { type: String },                     // optional but useful
+    },
+    
     relatives: [relativeSchema]
 });
 
